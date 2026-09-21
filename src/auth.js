@@ -114,7 +114,11 @@ export async function authFetch(url, options = {}, service = 'sheets') {
     setState({ expired: true })
     throw new AuthError('unauthorized')
   }
-  if (!res.ok) throw new ApiError(res.status, service)
+  if (!res.ok) {
+    // Google explains the failure in the body; the console is where to look when debugging.
+    console.warn(`${service} API ${res.status}:`, await res.text().catch(() => ''))
+    throw new ApiError(res.status, service)
+  }
   return res.json()
 }
 
