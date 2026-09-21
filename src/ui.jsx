@@ -3,7 +3,7 @@ import { errorMessage } from './auth'
 
 export function Badge({ kashrut }) {
   if (!kashrut) return null
-  return <span className={`badge badge-${kashrut}`}>{kashrut}</span>
+  return <span className="badge" data-kashrut={kashrut}>{kashrut}</span>
 }
 
 export function Loading({ text = 'טוען…' }) {

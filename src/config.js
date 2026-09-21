@@ -13,7 +13,7 @@ export const COLUMNS = [
   'created_at', 'updated_at', 'deleted',
 ]
 
-export const KASHRUT = ['בשרי', 'חלבי', 'פרווה', 'טבעוני']
+export const KASHRUT = ['בשרי', 'חלבי', 'פרווה', 'טבעוני', 'כשר לפסח']
 
 export const DEFAULT_CATEGORIES = [
   'סלטים וממרחים', 'מרקים', 'ירקות ותוספות', 'פסטה ואורז', 'עוף', 'בשר',

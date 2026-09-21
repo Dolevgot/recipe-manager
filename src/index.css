@@ -109,10 +109,12 @@ input[type='checkbox'] { width: 22px; height: 22px; min-height: 0; flex: none; }
 .meta { display: flex; gap: 0.9rem; flex-wrap: wrap; font-size: 0.85rem; color: var(--muted); }
 
 .badge { flex: none; font-size: 0.75rem; padding: 0.15em 0.7em; border-radius: 99px; font-weight: 500; }
-.badge-בשרי { background: #f6d9d5; color: #8a2a20; }
-.badge-חלבי { background: #dbe9f7; color: #24537f; }
-.badge-פרווה { background: #f3ecc9; color: #6b5a12; }
-.badge-טבעוני { background: #d9efd8; color: #2a6a2a; }
+.badge { background: #ece6e0; color: var(--text); }
+.badge[data-kashrut='בשרי'] { background: #f6d9d5; color: #8a2a20; }
+.badge[data-kashrut='חלבי'] { background: #dbe9f7; color: #24537f; }
+.badge[data-kashrut='פרווה'] { background: #f3ecc9; color: #6b5a12; }
+.badge[data-kashrut='טבעוני'] { background: #d9efd8; color: #2a6a2a; }
+.badge[data-kashrut='כשר לפסח'] { background: #e6dcf3; color: #4b2a7a; }
 
 /* --- recipe view --- */
 .back { font-size: 0.9rem; }
